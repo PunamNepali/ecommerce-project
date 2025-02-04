@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="Beautystorestyles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        
+        <li>
+          <a href="cart.html" class="cart-link">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cart">
+      <h1>Your Shopping Cart</h1>
+      <ul id="cart-items">
+        <!-- Cart items will be dynamically inserted here -->
+      </ul>
+      <button id="clear-cart">Clear Cart</button>
+      <p>Total: <span id="cart-total">Rs 0</span></p>
+    </section>
+  </main>
+
+  <script src="cart.js"></script>
+</body>
+</html>
