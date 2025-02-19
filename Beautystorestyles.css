@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  color: #333;
+  /* color: #333; */
 }
 
 /* Navigation Bar */
@@ -24,14 +24,6 @@ nav ul li {
   margin: 0 15px;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
 nav ul li a:hover {
   color: #ff1493;
 }
@@ -42,7 +34,7 @@ header {
   padding: 20px;
   background: #ff69b4;
   color: white;
-  font-size: 24px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -65,13 +57,15 @@ h1, h2 {
 }
 
 /* Product Grid */
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
-
 .product {
   background: #fff;
   padding: 15px;
@@ -81,9 +75,10 @@ h1, h2 {
 }
 
 .product img {
-  width: 100%;
-  height: auto;
+  width: 60vh;
+  height: 60vh;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .product h3 {
@@ -109,6 +104,69 @@ h1, h2 {
 
 .product button:hover {
   background: #ff1493;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+
+
+.product {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.product h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.product p {
+  font-size: 1rem;
+  color: #777;
+  margin: 5px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 /* Shopping Cart */
@@ -154,4 +212,65 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  color: white;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  position: relative;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  color: black;
+  min-width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.dropdown-menu a:hover {
+  background: #f0f0f0;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  text-align: start;
 }

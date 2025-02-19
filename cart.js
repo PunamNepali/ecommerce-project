@@ -2,6 +2,7 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function addToCart(productName, productPrice) {
+    
     const product = { name: productName, price: productPrice };
     cart.push(product);
     

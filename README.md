@@ -1,2 +1,0 @@
-"# OnlineBeautystore" 
-"# ecommerce-project" 

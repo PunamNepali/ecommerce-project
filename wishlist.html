@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <style>
+        .wishlist-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.wishlist-item img {
+    margin-right: 20px;
+}
+
+.wishlist-item button {
+    margin-left: auto;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.wishlist-item button:hover {
+    background-color: #cc0000;
+}
+    </style>
+</head>
+<body>
+    <section id="wishlist">
+        <h2>Your Wishlist</h2>
+        <button onclick="clearWishlist()">Clear Wishlist</button>
+        <div id="wishlist-container">
+            <!-- Wishlist items will be dynamically inserted here -->
+        </div>
+    </section>
+    <script src="wishlist.js"></script>
+</body>
+</html>
